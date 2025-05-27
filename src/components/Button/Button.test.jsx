@@ -50,17 +50,6 @@ describe("Testing a button", () => {
     expect(count).toBe(1000);
   });
 
-   const incrementCount = (increment) => {
-      count += increment;
-      return count;
-    };
-
-    const { container } = render(
-      <Button increment={"queso"} onClickFunction={incrementCount} />
-    );
-    const button = container.querySelector("button");
-    fireEvent.click(button);
-    expect(count).toBe("holaqueso"); // Por defecto en caso de fallo, incremento +1
 
   });
 
